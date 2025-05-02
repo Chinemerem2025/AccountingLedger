@@ -16,10 +16,10 @@ If the user chooses the Ledger option, it will open a LedgerMenu option where th
 # Main Menu & Ledger Menu
 ![image](https://github.com/user-attachments/assets/e7cc871d-2343-48c7-92dd-ea417b31ed1d)
 
-#Main Menu, Ledger Menu & Report Menu
+# Main Menu, Ledger Menu & Report Menu
 ![image](https://github.com/user-attachments/assets/9ee1d7dd-ad99-4188-ac54-8cfbf0c18fa9)
 
-#Ledger Menu Option A in Action
+# Ledger Menu Option A in Action
 ![image](https://github.com/user-attachments/assets/6fea8870-c37b-46e1-b242-6ea71c5bd146)
 
 
@@ -57,8 +57,7 @@ public static List<Transactions> viewAllTransactions() {
     }
     return allTransactions;
 # Examples 
-
- public static void viewDeposit() {
+public static void viewDeposit() {
     //List<Transactions> printDepositOnly = new ArrayList<>();
     for (Transactions t : Ledger.viewAllTransactions()) {
         if ((t.getAmount() > 0)) {
