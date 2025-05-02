@@ -22,32 +22,7 @@ If the user chooses the Ledger option, it will open a LedgerMenu option where th
 I am using the code for (Transactions t : Ledger.viewAllTransactions()) to loop through the list returned by the viewAllTransactions method in the Ledger class. This allows me to filter and process transactions in other methods—both inside and outside the Ledger  class—without needing to create a new list.
 By reusing the returned list directly, my report methods stay clean, concise, and easier to read. This approach avoids unnecessary duplication and keeps my code efficient.
 # // Method to Display all Transactions
-public static List<Transactions> viewAllTransactions() {
-    //store all transaction
-    List<Transactions> allTransactions = new ArrayList<>();
-    try {
-        //fileReader to read all transaction
-        FileReader fileReadAllEntries = new FileReader("transactions.csv");
-        BufferedReader bufferedReader = new BufferedReader(fileReadAllEntries);
-        bufferedReader.readLine();
+![image](https://github.com/user-attachments/assets/5b3ff2f3-79b3-4943-89cb-3bd7943aff6e)
+# Examples
+![image](https://github.com/user-attachments/assets/9caa6e57-a5dd-4586-99fa-f6ac7d37ca2f)
 
-        String line;
-        while ((line = bufferedReader.readLine()) != null) {
-
-            //parts the data from csv file
-            String[] splitParts = line.split("\\|");
-            LocalDate date = LocalDate.parse(splitParts[0].trim());
-            LocalTime time = LocalTime.parse(splitParts[1].trim());
-            String description = splitParts[2].trim();
-            String vendor = splitParts[3].trim();
-            double amount = Double.parseDouble(splitParts[4].trim());
-
-            Transactions t = new Transactions(date, time, description, vendor, amount);
-            allTransactions.add(t);
-        }
-        bufferedReader.close();
-
-    } catch (Exception e) {
-        throw new RuntimeException(e);
-    }
-    return allTransactions;
