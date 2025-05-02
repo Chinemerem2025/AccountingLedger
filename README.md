@@ -51,13 +51,3 @@ public static List<Transactions> viewAllTransactions() {
         throw new RuntimeException(e);
     }
     return allTransactions;
-# Examples 
- public static void viewDeposit() {
-        //List<Transactions> printDepositOnly = new ArrayList<>();
-        for (Transactions t : Ledger.viewAllTransactions()) {
-            if ((t.getAmount() > 0)) {
-                System.out.printf("Date: %s | Time: %s | Description: %s | Vendor: %s | Amount: %.2f%n",
-                        t.getDate(), t.getTime(), t.getDescription(), t.getVendor(), t.getAmount());
-            }
-        }
-    }
