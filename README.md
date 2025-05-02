@@ -6,11 +6,50 @@ Application to recode daily debit and credit for both business and individual us
 2.	Images of the App Screens
 3.	Interesting code
 # Description
-Accounting Ledger is a Java application that records daily debit and credit for both business and individual use. It is designed for businesses or individuals to record deposits and payments (debit) of their day-to-day transactions.
+Accounting Ledger is a Java-based application that records daily debit and credit transactions, suitable for both individuals and businesses. It allows users to log deposits and payments, storing all entries in a CSV file for easy record-keeping and reporting.
 
- When the application starts, the user is presented with a Main Menu that offers four options: Deposit, Make Payment, Ledger, and Exit. If the user selects either the Deposit or Make Payment option, all entries will be saved in a CSV file. 
- 
-If the user chooses the Ledger option, it will open a LedgerMenu option where the user can view all entries, deposit, or payment entries in the CSV file. In the Ledger Menu, there is an option to view a report. If the user chooses to view report, the ReportMenu will open, providing options to filter the information by Month-to-Date, Previous Month, Year-to-Date, Previous Year, or by Vendor.
+# Application Flow:
+When launched, the application presents a Main Menu with the following options:
+
+Deposit
+
+Record a deposit transaction.
+
+Data is saved to a transactions.csv file.
+
+Make Payment
+
+Record a payment (debit) transaction.
+
+Data is saved to the same transactions.csv file.
+
+# Ledger
+
+Opens the Ledger Menu, where users can:
+
+View all transactions
+
+View only deposits
+
+View only payments
+
+View reports
+
+
+# Reports
+Within the Ledger Menu, users can open the Report Menu to filter and view transactions based on:
+
+Month-to-Date
+
+Previous Month
+
+Year-to-Date
+
+Previous Year
+
+Vendor Search
+
+This helps users analyze their financial activity over different periods or by specific vendors.
 # Images
 ![image](https://github.com/user-attachments/assets/cf118b1d-d855-4cee-9ecd-afb11f7059b4)
 # Main Menu & Ledger Menu
