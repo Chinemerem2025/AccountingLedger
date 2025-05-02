@@ -6,8 +6,10 @@ Application to recode daily debit and credit for both business and individual us
 2.	Images of the App Screens
 3.	Interesting code
 # Description
-Accounting Ledger is a Java application that records daily debit and credit for both business and individual use. It is designed for businesses or individuals to record deposits and payments (debit) of their day-to-day transactions.  
+Accounting Ledger is a Java application that records daily debit and credit for both business and individual use. It is designed for businesses or individuals to record deposits and payments (debit) of their day-to-day transactions.
+
  When the application starts, the user is presented with a Main Menu that offers four options: Deposit, Make Payment, Ledger, and Exit. If the user selects either the Deposit or Make Payment option, all entries will be saved in a CSV file. 
+ 
 If the user chooses the Ledger option, it will open a LedgerMenu option where the user can view all entries, deposit, or payment entries in the CSV file. In the Ledger Menu, there is an option to view a report. If the user chooses to view report, the ReportMenu will open, providing options to filter the information by Month-to-Date, Previous Month, Year-to-Date, Previous Year, or by Vendor.
 # Images
 ![image](https://github.com/user-attachments/assets/cf118b1d-d855-4cee-9ecd-afb11f7059b4)
