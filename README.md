@@ -13,13 +13,13 @@ If the user chooses the Ledger option, it will open a LedgerMenu option where th
 # Images
 ![image](https://github.com/user-attachments/assets/cf118b1d-d855-4cee-9ecd-afb11f7059b4)
 
-Main Menu & Ledger Menu
+# Main Menu & Ledger Menu
 ![image](https://github.com/user-attachments/assets/e7cc871d-2343-48c7-92dd-ea417b31ed1d)
 
-Main Menu, Ledger Menu & Report Menu
+#Main Menu, Ledger Menu & Report Menu
 ![image](https://github.com/user-attachments/assets/9ee1d7dd-ad99-4188-ac54-8cfbf0c18fa9)
 
-Ledger Menu Option A in Action
+#Ledger Menu Option A in Action
 ![image](https://github.com/user-attachments/assets/6fea8870-c37b-46e1-b242-6ea71c5bd146)
 
 
@@ -59,8 +59,9 @@ public static List<Transactions> viewAllTransactions() {
 # Examples 
 
  public static void viewDeposit() {
-        //List<Transactions> printDepositOnly = new ArrayList<>();
-        for (Transactions t : Ledger.viewAllTransactions()) {
-            if ((t.getAmount() > 0)) {
-                System.out.printf("Date: %s | Time: %s | Description: %s | Vendor: %s | Amount: %.2f%n",
-                        t.getDate(), t.getTime(), t.getDescription(), t.getVendor(), t.getAmount());
+    //List<Transactions> printDepositOnly = new ArrayList<>();
+    for (Transactions t : Ledger.viewAllTransactions()) {
+        if ((t.getAmount() > 0)) {
+            System.out.printf("Date: %s | Time: %s | Description: %s | Vendor: %s | Amount: %.2f%n",
+                    t.getDate(), t.getTime(), t.getDescription(), t.getVendor(), t.getAmount());
+
