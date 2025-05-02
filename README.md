@@ -21,7 +21,7 @@ If the user chooses the Ledger option, it will open a LedgerMenu option where th
 ## Interesting code
 I am using the code for (Transactions t : Ledger.viewAllTransactions()) to loop through the list returned by the viewAllTransactions method in the Ledger class. This allows me to filter and process transactions in other methods—both inside and outside the Ledger  class—without needing to create a new list.
 By reusing the returned list directly, my report methods stay clean, concise, and easier to read. This approach avoids unnecessary duplication and keeps my code efficient.
-// Method to Display all Transactions
+# // Method to Display all Transactions
 public static List<Transactions> viewAllTransactions() {
     //store all transaction
     List<Transactions> allTransactions = new ArrayList<>();
